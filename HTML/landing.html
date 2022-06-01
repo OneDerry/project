@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        nav{
+      display: flex;
+      border-radius: 10px;
+      background-color: #eee;
+      padding: 0.5em;
+      margin: 5px 0;
+      margin-top: 0;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+      width: 96%;
+    }
+    body{
+        padding-top: 145px;
+        background-color: #eee;
+        text-align: center;
+    }
+    a{
+        padding: 2em;
+        flex: 1;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        margin: 10px 15px;  
+        color: black;
+        background-color: #eee;
+        box-shadow: 2px 3px black;
+    }
+    a:hover{
+        background-color: rgb(121, 110, 110);
+    }
+    .one{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(3, 100px);
+        gap: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 1em;
+    }
+    .two{
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .two h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-family: monospace;
+    }
+    .three{
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+    }
+    @media screen and (min-width: 900px) {
+        article {
+            padding: 1rem 3rem;
+        }
+    }
+    article{
+        flex: 1;  
+        padding: 0.2em 0;
+        padding-top: 0%;
+        border: 1px solid #111;
+        border-radius: 5px;
+        margin: 10px;
+        text-transform: uppercase;
+        flex-direction: column;
+        text-align: center;
+    }
+    article h3{
+        background-color: gray;
+        margin-top: 0%;
+        padding: 1em;
+        border-radius: 5px 5px 0 0;
+        font-size: 15px;
+    }
+    
+    form{
+        text-align: center;
+        border-radius: 10px;
+        padding: 0.5em;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    iframe{
+        margin: 10px auto;
+        display: block;
+    }
+    #icon{
+        padding-inline-end: 5%;
+    }
+    section h3{
+        text-align: left;
+    }
+    #submit{
+        display: block;
+        margin: 1em auto;
+        color: bisque;
+        background-color: darkgrey;
+        padding: 0.5em;
+        width: 10%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    }
+    #submit:hover{
+        background-color: black;
+    }
+    </style>
+    </head>
+<body>
+  <header id="header">
+    <nav id="nav-bar">
+        <img src="https://i.pinimg.com/550x/63/08/30/6308307c7687c725c35a34dfd85f8041.jpg" id="header-img" width="100px" alt="logo">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#how it works" class="nav-link">How it works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+  </header>
+    <h1>Hand/Video taught Masterpiece</h1>
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <input type="email" id="email" placeholder="Enter email" name="email">
+      <label for="email" name="user-recommend"></label>
+      <input type="submit" id="submit" value="Get Started">
+     </form> 
+    <section class="one" id="features">
+        <h3><i class="bi bi-bag-check-fill" id="icon"></i>Premium Training</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur quis. Doloribus esse sapiente totam corporis eius alias, similique voluptas veritatis. Eos pariatur ipsa velit ea sint, rem vitae esse!</p>
+  
+        
+        <h3><i class="bi bi-alarm" id="icon"></i>Fast Learning</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur quis. Doloribus esse sapiente totam corporis eius alias, similique voluptas veritatis. Eos pariatur ipsa velit ea sint, rem vitae esse!</p>
+  
+      <h3><i class="bi bi-bar-chart-line-fill" id="icon"></i>Quality Tutoring</h3> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, consectetur quis. Doloribus esse sapiente totam corporis eius alias, similique voluptas veritatis. Eos pariatur ipsa velit ea sint, rem vitae esse!</p>
+    </section>
+    <section class="two" id="how it works">
+      <h2>How It Works</h2>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Af5kT_fLhI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <h2>Pricing</h2>
+    <section class="three" id="pricing">
+        <article>
+            <h3>Noob</h3>
+            <p>#42000</p>
+        </article>
+        <article>
+            <h3>Average</h3> 
+            <p>#25000</p>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>consectetur adipisicing elit.</p>
+        </article>
+        <article>
+            <h3>Expert</h3>
+            <p>#5000 plus tutoring lower levels</p>
+            </article>
+    </section>
+</body>
+</html>
