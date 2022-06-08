@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portfolio</title>
+    <style>
+        @media screen and (min-width: 900px){
+        article {
+          padding: 1rem 3rem;
+        }
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Tiro+Gurmukhi:ital@1&display=swap');
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        text-align: center;
+      }
+      .nav-bar{
+        background-color: black;
+        padding: 1.5em;
+        height: 70px;
+        position: fixed;
+        z-index: 12;
+        width: 100%;
+      }
+      nav{
+        float: right;
+        padding: 1em;
+      }
+      nav a{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1em;
+        letter-spacing: 3px;
+        line-height: 40px;
+        color: aliceblue;
+        margin-right: 10px;
+        border: 1px solid white;
+      }
+      nav a:hover{
+        color: chocolate;
+      }
+      #welcome-section{
+        width: 100%;
+        height: 100vh;
+        position: fixed; 
+        top: 118px;
+        background-image: url(../IMAGES/aboutmebgi.avif);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+      }
+      h1{
+        padding-top: 8%;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 100px;
+        color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      span{
+        color: wheat;
+        font-family: kdam Thmor Pro;
+        font-size: 30px;
+      }
+      #projects{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        top: 670px;
+        background-color: #45567d;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+
+      .contacts{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        top: 650px;
+        background-color: rgb(44, 36, 36);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+      .contacts a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+        margin: 20px;
+      }
+      h3{
+        text-transform: capitalize;
+        color: lightgoldenrodyellow;
+        padding: 20px;
+      }
+      .container{
+        width: 400px;
+        height: 350px;
+        margin: 120px auto;
+        border-radius: 20px;
+        box-shadow: 4px 8px 4px black;
+      }
+      .proj-img{
+        width: 100%;
+        background-size: cover;
+      }  
+      img{  
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .project-tile{
+        width: 100%;
+        height: 100px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: blue;
+      }  
+      .project-tile a{  
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 90px;
+        color: #eee;
+      }
+      p{
+        color: #eee;
+      }
+      .social-icon{
+        color: blue;
+        font-size: 80px;
+        transition: 0.2s;
+        line-height: 250px;
+      }
+      .social-icon:hover{
+        color: aqua;
+      }
+    </style>
+</head>
+<body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <section class="nav-bar">
+        <nav id="navbar">
+            <a href="#About">About</a>
+            <a href="#Work">Work</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+      </section>   
+      <section id="welcome-section" id="Work">
+        <h1>Hi, I am Derry</br><span>A web developer</span></h1>
+      </section>
+      <section id="projects">
+        <h2>hi there<br>These are some of my Projects</h2>
+        <div class="container">
+          <div class="proj-img">
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" target="_blank"><img src="../IMAGES/survey.bmp.png"></a>
+          </div>
+          <div class="project-tile">
+            <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" target="_blank">Survey Form</a>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="Contact">
+        <h3>Contacts</h3>
+        <a href="https://twitter.com/OneDerryy" target="_blank" id="profile-link" class="social-icon">
+          <ion-icon name="logo-github"></ion-icon>
+        </a> 
+        <a href="https://github.com/OneDerry" target="_blank" id="profile-link" class="social-icon">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://instagram.com/onederryy" target="_blank" id="profile-link" class="social-icon">
+        <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </section>
+</body>
+</html>

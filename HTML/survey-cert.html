@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(../IMAGES/bgforsurvey.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            align-items: center;
+            /* height: 100vh; */
+        }
+        form{
+            background-color: rgba(0, 0, 255, 0.76);
+        }
+        form div{
+            width: 60%;
+            margin: 0 auto;
+            background-color: rgb(1, 1, 36);
+            border-radius: 5px;
+            color: #fff;
+            padding: 20px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 30px;
+        }
+        h1, #description{
+            padding: 20px;
+            background-color: rgba(0, 0, 255, 0.76);
+            color: #fff;
+            text-align: center;
+        }
+        .label{
+            display: block;
+            padding: 5px;
+            padding-left: 0;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        .label+input{
+            width: 100%;
+            line-height: 3;
+            border-radius: 15px;
+        }
+        input{
+            margin: 2px 0;
+        }
+        #dropdown{
+            width: 100%;
+            line-height: 3;
+            padding: 12px;
+            border-radius: 15px;
+        }
+        #submit{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="title">Free Code Camp Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this</p>
+        <form id="survey-form">
+            <div>
+
+                <ul>
+                    <li>
+                    <label for="name" id="name-label" class="label">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </li>
+                <li>
+                    <label for="email" id="email-label" class="label">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required pattern="***@mail.com">
+                </li>
+                <li>
+                    <label for="number" id="number-label" class="label">Number</label>
+                    <input type="number" id="number" placeholder="Enter your number" min="15" max="30">
+                </li>
+                <li>
+                    <label for="dropdown"id="dropdown-label" class="label">Which option best describes your role?</label>
+                    <select id="dropdown" name="select your role">
+                        <option value="scl">select current role</option>
+                        <option value="st">Student</option>
+                        <option value="ftj">Full Time Job</option>
+                        <option value="ftl">Full Time Learner</option>
+                        <option value="pnts">Prefer not to say</option>
+                    </select>
+                </li>
+            </ul>
+            <h3>Would you recommend FreeCodeCamp to your friend?</h3>
+            <ul>
+                <li class="recommend">
+                    <input type="radio" name="user-recommend" id="definitely" value="definitely">
+                    <label for="definitely" id="definitely-label">Definitely</label>
+                </li>
+                <li>
+
+                    <input type="radio" name="user-recommend" id="maybe" value="maybe" class="input-radio">
+                    <label for="maybe" id="maybe-label">maybe</label>
+                </li>
+                <li>
+
+                    <input type="radio" name="user-recommend" id="not sure" value="not sure">
+                    <label for="not sure" id="not sure-label">not sure</label>
+                </li>
+            </ul>
+                <h3 class="improve">What would you like to see improved</h3>
+            <ul>
+                <li>
+                    <input type="checkbox" id="1" value="Frontend">
+                    <label for="1" id="1">Front end projects</label>
+                </li>
+                <li>
+
+                    
+                    <input type="checkbox" id="1" value="Backend">
+                    <label for="1" id="1">Back end projects</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" id="1" value="Data">
+                    <label for="1" id="1">Data visualization</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" id="1" value="Challenges">
+                    <label for="1" id="1">Challenges</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" id="1" value="opensource">
+                    <label for="1" id="1">Open Source Community</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" id="1" value="Gitter">
+                    <label for="1" id="1">Gitter help rooms</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1" value="Videos">
+                    <label for="1" id="1">Videos</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1" value="Meetups">
+                    <label for="1" id="1">City Meetups</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1" value="Wiki">
+                    <label for="1" id="1">Wiki</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="1" value="Forum">
+                    <label for="1" id="1">Forum</label>
+                </li>
+                <li>
+
+                    <input type="checkbox" id="1" value="Additional courses">
+                    <label for="1" id="1">Additional courses</label>
+                </li>
+            </ul>
+                    <h3 class="comments">Additional Comments</h3>
+                    <textarea name="additional comments" id="add-comments" placeholder="enter additional comments here" rows="10" cols="100"></textarea>
+                    <label for="additional comments" id="add-comments"></label>
+                    <input type="submit" id="submit" placeholder="submit">
+                    <label for="submit" id="submit"></label>
+         </div>
+        </form>
+    </body>
+</html>
