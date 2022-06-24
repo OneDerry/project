@@ -17,6 +17,7 @@ body{
 .a{
     display: flex;
     flex-direction: row-reverse;
+    margin-right: 220px;
 }
 .a a{
     text-transform: uppercase;
@@ -35,15 +36,25 @@ body{
         height: 180px;
     }
 }
+.logo{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:500px) {
+    .logo{
+        display: block;
+        align-items: flex-start;
+        justify-content: start;
+        text-align: start;
+    }
+}
 .logo a{
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(85, 85, 247);
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* line-height: 50px; */
-    /* padding: 5px; */
-    /* margin-left: 50px; */
 }
 
 .banner{
