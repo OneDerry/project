@@ -60,7 +60,7 @@ body{
 }
 @media screen and (max-width: 500px) {
     .banner-text{
-        margin-left: 50px;
+        margin-left: 0px;
     }
 }
 .banner-text h3{
@@ -351,12 +351,10 @@ body{
     .top{
         height: 700px;
         flex-direction: column;
-        margin-left: 50px;
     }
     .bottom{
         height: 700px;
         flex-direction: column;
-        margin-left: 50px;
     }
     .last{
         height: 350px;
